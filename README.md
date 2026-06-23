@@ -1,6 +1,6 @@
 # NetDoc Maker
 
-Profesjonalna aplikacja do tworzenia dokumentacji sieciowej w stylu Cisco.
+Aplikacja do tworzenia dokumentacji sieciowej w stylu Cisco.
 
 ## Stack
 
@@ -20,7 +20,7 @@ Profesjonalna aplikacja do tworzenia dokumentacji sieciowej w stylu Cisco.
 
 ## Uruchomienie (Docker)
 
-\`\`\`bash
+\`\`\`
 docker compose up --build
 \`\`\`
 
@@ -33,7 +33,7 @@ Aplikacja dostępna pod:
 
 ### Backend
 
-\`\`\`bash
+\`\`\`
 cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -45,7 +45,7 @@ uvicorn app.main:app --reload
 
 ### Frontend
 
-\`\`\`bash
+\`\`\`
 cd frontend
 npm install
 cp .env.example .env      # ustaw VITE_API_URL
