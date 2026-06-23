@@ -20,9 +20,7 @@ Aplikacja do tworzenia dokumentacji sieciowej w stylu Cisco.
 
 ## Uruchomienie (Docker)
 
-\`\`\`
 docker compose up --build
-\`\`\`
 
 Aplikacja dostępna pod:
 - Frontend: http://localhost:5173
@@ -33,7 +31,6 @@ Aplikacja dostępna pod:
 
 ### Backend
 
-\`\`\`
 cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -41,13 +38,10 @@ pip install -r requirements.txt
 cp .env.example .env      # uzupełnij DATABASE_URL
 alembic upgrade head
 uvicorn app.main:app --reload
-\`\`\`
 
 ### Frontend
 
-\`\`\`
 cd frontend
 npm install
 cp .env.example .env      # ustaw VITE_API_URL
 npm run dev
-\`\`\`
