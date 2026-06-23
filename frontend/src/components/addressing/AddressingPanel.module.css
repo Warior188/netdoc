@@ -1,0 +1,88 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+}
+
+.hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table th {
+  text-align: left;
+  padding: 6px 10px;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table input {
+  min-width: 110px;
+}
+
+.devBadge {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.devBadge.router { background: var(--accent-dim); color: var(--accent-text); }
+.devBadge.switch { background: var(--green-dim); color: var(--green-text); }
+.devBadge.pc { background: var(--bg-base); color: var(--text-secondary); }
+.devBadge.server { background: var(--coral-dim); color: #f0a080; }
+.devBadge.firewall { background: var(--red-dim); color: var(--red-text); }
+
+.emptyRow {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 24px;
+}
+
+.addRowBtn {
+  margin-top: 12px;
+  font-size: 11px;
+}
+
+.navRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
